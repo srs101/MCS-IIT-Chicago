@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#33FFFFFF">
+
+    <TextView
+        android:id="@+id/hour_day"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/hour_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/hour_day"
+        app:layout_constraintStart_toStartOf="@+id/hour_day"
+        app:layout_constraintTop_toBottomOf="@+id/hour_day" />
+
+    <ImageView
+        android:id="@+id/hour_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/hour_time"
+        app:layout_constraintStart_toStartOf="@+id/hour_time"
+        app:layout_constraintTop_toBottomOf="@+id/hour_time" />
+
+    <TextView
+        android:id="@+id/hour_temp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center|top"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/hour_time"
+        app:layout_constraintStart_toStartOf="@+id/hour_time"
+        app:layout_constraintTop_toBottomOf="@+id/hour_icon" />
+
+    <TextView
+        android:id="@+id/hour_descrip"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center|top"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/hour_temp"
+        app:layout_constraintStart_toStartOf="@+id/hour_temp"
+        app:layout_constraintTop_toBottomOf="@+id/hour_temp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

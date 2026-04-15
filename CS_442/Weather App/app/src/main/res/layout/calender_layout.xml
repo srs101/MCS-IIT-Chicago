@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/Calender_day"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#334B371C"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/Calender_temp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/Cal_icon"
+        app:layout_constraintStart_toStartOf="@+id/Calender_day"
+        app:layout_constraintTop_toBottomOf="@+id/Calender_day" />
+
+    <ImageView
+        android:id="@+id/Cal_icon"
+        android:layout_width="128dp"
+        android:layout_height="127dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Calender_temp"
+        app:layout_constraintTop_toBottomOf="@+id/Calender_day" />
+
+    <TextView
+        android:id="@+id/Calender_precp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/Cal_desc"
+        app:layout_constraintStart_toStartOf="@+id/Cal_desc"
+        app:layout_constraintTop_toBottomOf="@+id/Cal_desc" />
+
+    <TextView
+        android:id="@+id/Calender_UV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/Calender_precp"
+        app:layout_constraintStart_toStartOf="@+id/Calender_precp"
+        app:layout_constraintTop_toBottomOf="@+id/Calender_precp" />
+
+    <TextView
+        android:id="@+id/Cal_morning"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/Cal_afternoon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Calender_UV" />
+
+    <TextView
+        android:id="@+id/Cal_afternoon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/Cal_evening"
+        app:layout_constraintStart_toEndOf="@+id/Cal_morning"
+        app:layout_constraintTop_toTopOf="@+id/Cal_morning" />
+
+    <TextView
+        android:id="@+id/Cal_evening"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/Cal_night"
+        app:layout_constraintStart_toEndOf="@+id/Cal_afternoon"
+        app:layout_constraintTop_toTopOf="@+id/Cal_afternoon" />
+
+    <TextView
+        android:id="@+id/Cal_night"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Cal_evening"
+        app:layout_constraintTop_toTopOf="@+id/Cal_evening" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Morning"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/Cal_morning"
+        app:layout_constraintStart_toStartOf="@+id/Cal_morning"
+        app:layout_constraintTop_toBottomOf="@+id/Cal_morning" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="10dp"
+        android:text="Afternoon"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/Cal_afternoon"
+        app:layout_constraintStart_toEndOf="@+id/Cal_morning"
+        app:layout_constraintTop_toBottomOf="@+id/Cal_afternoon" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Evening"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/Cal_evening"
+        app:layout_constraintStart_toEndOf="@+id/Cal_afternoon"
+        app:layout_constraintTop_toBottomOf="@+id/Cal_evening" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Night"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Cal_evening"
+        app:layout_constraintTop_toBottomOf="@+id/Cal_night" />
+
+    <TextView
+        android:id="@+id/Cal_desc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/Calender_temp"
+        app:layout_constraintStart_toStartOf="@+id/Calender_temp"
+        app:layout_constraintTop_toBottomOf="@+id/Calender_temp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
